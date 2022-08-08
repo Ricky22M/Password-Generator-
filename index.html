@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- The title of the webpage-->
+    <title>Password Generator</title>
+    <!-- Links to the CSS page which is responsible for designing the HTML page-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!-- Shows the name of the proect -->
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <!-- Gives instructions -->
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <!-- This is the placeholder for the passord when it has been generated -->
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <!-- This is the button which starts the process of generating a new password -->
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <!-- Connected to the JavaScript page that allows the user to interact with the window prompts and the "Generate Password" button -->
+    <script src="script.js"></script>
+  </body>
+</html>
